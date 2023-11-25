@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact</title>
+  <link rel="stylesheet" type="text/css" href="contact.css">
+</head>
+<body>
+
+	<div class="footer">
+  <a href="home.css">Home<a/>
+    <a href="shop.html">Shop</a>
+    <a href="contact.html">Contact</a>
+    <a href="research.html">Research</a>
+    <a href="copyright.html">2019 all rights reserved</a>
+</div>
+
+
+
+<div class="navbar">
+  <a href="home.html">EXO CARS</a>
+  <a href="about.html">ABOUT</a>
+  <div class="dropdown">
+    <button class="dropbtn">TESLA 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="MODELX.html">MODEL X</a>
+      <a href="MODEL3.html">MODEL 3</a>
+    </div>
+  </div>
+    <div class="dropdown">
+    <button class="dropbtn">BMW 
+    </button>
+    <div class="dropdown-content">
+      <a href="i8.html">BMW i8</a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <button class="dropbtn">LAND ROVER 
+    </button>
+    <div class="dropdown-content">
+      <a href="RVvelar.html">RANGE ROVER VELAR</a>
+      <a href="RVsports.html">RANGE ROVER SPORTS</a>
+    </div>
+  </div>
+  <a href="shop.html">SHOP</a>
+<a href="research.html">RESEARCH</a>
+<a href="tech.html">TECHNOLOGY IN BUSINESS</a>
+<a href="contact.html">CONTACT</a>
+</div>
+<img src="logo.png" style="position: absolute;top: 50%; left: 20%; transform: translate(-50%,-50%);">
+<h2 style="text-align: center;">Contact Form</h2>
+	<div class='container'>
+    <form method="post">
+		First Name : <input type="text" name="name" id="name" onkeypress="return a(event);"/><br><br>
+		Last Name  : <input type="text" id="last" name="last"><br><br>
+		Phone  : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="phone" id="phone"><br><br>
+		Address    : &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="address" id="address"><br><br>
+		Car Model    :  <input type="text" id="order"><br><br>
+		<center><input type="Submit" id="submit" value="Purchase" onclick="formValid();"><br><br></center>
+	</div>
+</form>
+
+<script>
+  function formValid(){
+  var nameD = document.getElementById("name").value;
+  var lastD = document.getElementById("last").value;
+  var phD = document.getElementById("phone").value;
+  var orderD = document.getElementById("order").value;
+  var addressD = document.getElementById("address").value;
+
+if (nameD!="" && lastD!="" && orderD!="" && addressD!="")
+{
+  alert("Purchase Success");
+}
+else{
+  alert("Value required");
+}
+
+
+}
+</script>
+
+
+</body>
+</html>
